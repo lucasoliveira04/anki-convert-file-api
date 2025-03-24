@@ -1,5 +1,5 @@
-from flask import Flask, request, jsonify, send_file
-from flask_cors import CORS
+from flask import Flask, request, jsonify, send_file # type: ignore
+from flask_cors import CORS # type: ignore
 import genanki
 import json
 import os
