@@ -7,6 +7,10 @@ import os
 app = Flask(__name__)
 CORS(app)
 
+
+@app.route('/start', methods=['GET'])
+def start_api():
+    return {"message": "API initialized"}
 @app.route('/convert', methods=['POST'])
 def convert_to_apkg():
     try:
